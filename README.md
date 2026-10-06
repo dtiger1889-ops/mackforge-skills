@@ -2,7 +2,11 @@
 
 Skills for thinking with Claude: check what already exists before building, attack a plan before trusting it, fan out ideas on an open problem, break a tangle down to one next action, make Claude source its claims, translate jargon into plain English, and get interviewed before a build starts.
 
-They work on their own. Each one reads whatever project files you already have (a README, a status file, agent instructions) and needs no particular setup.
+![The seven Thinking Tools commands](assets/thinking-tools.png)
+
+## Why
+
+Claude commits to its first answer fast, and most of my corrections were the same few pushes: did you check whether this already exists, what's wrong with this plan, say that again in English. I turned each push into a command so I could stop typing it out. They work on their own: each one reads whatever project files you already have (a README, a status file, agent instructions) and needs no particular setup.
 
 ## Plugins
 
@@ -13,7 +17,7 @@ They work on their own. Each one reads whatever project files you already have (
 | [mackforge-redteam](plugins/mackforge-redteam) | `/redteam` only |
 | [mackforge-fanout](plugins/mackforge-fanout) | `/fanout` only |
 
-Install one, not the bundle and a single together, or the same command appears twice.
+Pick either the bundle or the single plugins you want. Installing the bundle next to a single one gives you the same command twice.
 
 ## Install
 
