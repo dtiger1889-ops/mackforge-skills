@@ -1,0 +1,20 @@
+{
+  "name": "mackforge-thinking-tools",
+  "displayName": "Thinking Tools",
+  "version": "1.0.0",
+  "description": "Seven skills for thinking with Claude: check prior art, attack a plan, fan out ideas, break a problem down, prove claims, translate jargon, and interview before building.",
+  "author": {
+    "name": "Daniel Mack",
+    "url": "https://mackforge.dev"
+  },
+  "homepage": "https://github.com/dtiger1889-ops/mackforge-skills",
+  "repository": "https://github.com/dtiger1889-ops/mackforge-skills",
+  "license": "MIT",
+  "keywords": [
+    "thinking",
+    "planning",
+    "critique",
+    "research",
+    "prompting"
+  ]
+}

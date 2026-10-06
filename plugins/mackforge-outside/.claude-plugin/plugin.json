@@ -1,0 +1,18 @@
+{
+  "name": "mackforge-outside",
+  "displayName": "Outside View",
+  "version": "1.0.0",
+  "description": "Before committing to an approach, one quick check of what already exists: shipped tools, your other projects, your notes. Verdict first, one next action last.",
+  "author": {
+    "name": "Daniel Mack",
+    "url": "https://mackforge.dev"
+  },
+  "homepage": "https://github.com/dtiger1889-ops/mackforge-skills",
+  "repository": "https://github.com/dtiger1889-ops/mackforge-skills",
+  "license": "MIT",
+  "keywords": [
+    "prior-art",
+    "research",
+    "planning"
+  ]
+}

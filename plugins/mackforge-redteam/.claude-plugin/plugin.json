@@ -1,0 +1,18 @@
+{
+  "name": "mackforge-redteam",
+  "displayName": "Red Team",
+  "version": "1.0.0",
+  "description": "One adversarial pass that assumes your plan or answer is wrong, finds the most likely fatal flaw, and names the cheapest check that settles it.",
+  "author": {
+    "name": "Daniel Mack",
+    "url": "https://mackforge.dev"
+  },
+  "homepage": "https://github.com/dtiger1889-ops/mackforge-skills",
+  "repository": "https://github.com/dtiger1889-ops/mackforge-skills",
+  "license": "MIT",
+  "keywords": [
+    "critique",
+    "review",
+    "decision-making"
+  ]
+}
