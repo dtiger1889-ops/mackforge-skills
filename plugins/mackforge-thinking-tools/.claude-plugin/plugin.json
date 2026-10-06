@@ -9,6 +9,9 @@
   },
   "homepage": "https://github.com/dtiger1889-ops/mackforge-skills",
   "repository": "https://github.com/dtiger1889-ops/mackforge-skills",
+  "documentationUrl": "https://github.com/dtiger1889-ops/mackforge-skills/tree/main/plugins/mackforge-thinking-tools#readme",
+  "supportUrl": "https://github.com/dtiger1889-ops/mackforge-skills/issues",
+  "privacyPolicyUrl": "https://github.com/dtiger1889-ops/mackforge-skills/blob/main/PRIVACY.md",
   "license": "MIT",
   "keywords": [
     "thinking",

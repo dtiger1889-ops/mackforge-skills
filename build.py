@@ -67,6 +67,9 @@ def build():
             "author": AUTHOR,
             "homepage": REPO,
             "repository": REPO,
+            "documentationUrl": f"{REPO}/tree/main/plugins/{name}#readme",
+            "supportUrl": f"{REPO}/issues",
+            "privacyPolicyUrl": f"{REPO}/blob/main/PRIVACY.md",
             "license": "MIT",
             "keywords": spec["keywords"],
         }
