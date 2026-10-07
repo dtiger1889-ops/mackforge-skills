@@ -35,7 +35,7 @@ PLUGINS = {
         "skills": ["fanout"],
         "keywords": ["ideation", "brainstorming", "design"],
     },
-    "mackforge-thinking-tools": {
+    "mackforge-think-twice": {
         "displayName": "Mackforge Think Twice",
         "description": "Seven skills for thinking with Claude: check prior art, attack a plan, fan out ideas, break a problem down, prove claims, translate jargon, and interview before building.",
         "skills": ["outside", "redteam", "fanout", "breakdown", "prove", "plain", "grill-me"],

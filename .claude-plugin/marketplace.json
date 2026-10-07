@@ -22,8 +22,8 @@
       "description": "Five parallel thinking frames plus a critic on an open-ended problem: scored ideas, the traps each one carries, and the strongest direction."
     },
     {
-      "name": "mackforge-thinking-tools",
-      "source": "./plugins/mackforge-thinking-tools",
+      "name": "mackforge-think-twice",
+      "source": "./plugins/mackforge-think-twice",
       "description": "Seven skills for thinking with Claude: check prior art, attack a plan, fan out ideas, break a problem down, prove claims, translate jargon, and interview before building."
     }
   ]

@@ -2,7 +2,7 @@
 
 Skills for thinking with Claude: check what already exists before building, attack a plan before trusting it, fan out ideas on an open problem, break a tangle down to one next action, make Claude source its claims, translate jargon into plain English, and get interviewed before a build starts.
 
-![The seven Think Twice commands](assets/thinking-tools.png)
+![The seven Think Twice commands](assets/think-twice.png)
 
 ## Why
 
@@ -12,7 +12,7 @@ Claude commits to its first answer fast, and most of my corrections were the sam
 
 | Plugin | Contains |
 |---|---|
-| [mackforge-thinking-tools](plugins/mackforge-thinking-tools) (Mackforge Think Twice) | All seven: `/outside`, `/redteam`, `/fanout`, `/breakdown`, `/prove`, `/plain`, `/grill-me` |
+| [mackforge-think-twice](plugins/mackforge-think-twice) | All seven: `/outside`, `/redteam`, `/fanout`, `/breakdown`, `/prove`, `/plain`, `/grill-me` |
 | [mackforge-outside](plugins/mackforge-outside) | `/outside` only |
 | [mackforge-redteam](plugins/mackforge-redteam) | `/redteam` only |
 | [mackforge-fanout](plugins/mackforge-fanout) | `/fanout` only |

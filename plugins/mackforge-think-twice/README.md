@@ -22,7 +22,7 @@ The same `outside`, `redteam` and `fanout` skills are also listed on their own, 
 
 ## Install
 
-In claude.ai: Customize, then Plugins, then browse the directory for **Mackforge Think Twice**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-thinking-tools@mackforge`.
+In claude.ai: Customize, then Plugins, then browse the directory for **Mackforge Think Twice**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-think-twice@mackforge`.
 
 ## Credit and license
 

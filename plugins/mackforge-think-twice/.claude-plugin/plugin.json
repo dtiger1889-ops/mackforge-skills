@@ -1,5 +1,5 @@
 {
-  "name": "mackforge-thinking-tools",
+  "name": "mackforge-think-twice",
   "displayName": "Mackforge Think Twice",
   "version": "1.0.0",
   "description": "Seven skills for thinking with Claude: check prior art, attack a plan, fan out ideas, break a problem down, prove claims, translate jargon, and interview before building.",
@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/dtiger1889-ops/mackforge-skills",
   "repository": "https://github.com/dtiger1889-ops/mackforge-skills",
-  "documentationUrl": "https://github.com/dtiger1889-ops/mackforge-skills/tree/main/plugins/mackforge-thinking-tools#readme",
+  "documentationUrl": "https://github.com/dtiger1889-ops/mackforge-skills/tree/main/plugins/mackforge-think-twice#readme",
   "supportUrl": "https://github.com/dtiger1889-ops/mackforge-skills/issues",
   "privacyPolicyUrl": "https://github.com/dtiger1889-ops/mackforge-skills/blob/main/PRIVACY.md",
   "license": "MIT",
