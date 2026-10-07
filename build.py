@@ -18,25 +18,25 @@ REPO = "https://github.com/dtiger1889-ops/mackforge-skills"
 
 PLUGINS = {
     "mackforge-outside": {
-        "displayName": "Outside View",
+        "displayName": "Mackforge Outside View",
         "description": "Before committing to an approach, one quick check of what already exists: shipped tools, your other projects, your notes. Verdict first, one next action last.",
         "skills": ["outside"],
         "keywords": ["prior-art", "research", "planning"],
     },
     "mackforge-redteam": {
-        "displayName": "Red Team",
+        "displayName": "Mackforge Red Team",
         "description": "One adversarial pass that assumes your plan or answer is wrong, finds the most likely fatal flaw, and names the cheapest check that settles it.",
         "skills": ["redteam"],
         "keywords": ["critique", "review", "decision-making"],
     },
     "mackforge-fanout": {
-        "displayName": "Fanout",
+        "displayName": "Mackforge Fanout",
         "description": "Five parallel thinking frames plus a critic on an open-ended problem: scored ideas, the traps each one carries, and the strongest direction.",
         "skills": ["fanout"],
         "keywords": ["ideation", "brainstorming", "design"],
     },
     "mackforge-thinking-tools": {
-        "displayName": "Thinking Tools",
+        "displayName": "Mackforge Think Twice",
         "description": "Seven skills for thinking with Claude: check prior art, attack a plan, fan out ideas, break a problem down, prove claims, translate jargon, and interview before building.",
         "skills": ["outside", "redteam", "fanout", "breakdown", "prove", "plain", "grill-me"],
         "keywords": ["thinking", "planning", "critique", "research", "prompting"],

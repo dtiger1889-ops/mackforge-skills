@@ -1,4 +1,4 @@
-# Outside View
+# Mackforge Outside View
 
 Before Claude commits to building something, `/outside` makes it look outside its own head first. It runs one short reconnaissance pass: a few web searches for tools, libraries and published skills that already solve the problem, a look at your other projects for the same problem shape, and a check of the one note that applies. Then it reports.
 
@@ -20,7 +20,7 @@ Type `/outside` or say "check prior art" or "has anyone already built this".
 
 ## Install
 
-In claude.ai: Customize, then Plugins, then browse the directory for **Outside View**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-outside@mackforge`.
+In claude.ai: Customize, then Plugins, then browse the directory for **Mackforge Outside View**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-outside@mackforge`.
 
 ## License
 

@@ -1,4 +1,4 @@
-# Red Team
+# Mackforge Red Team
 
 `/redteam` gives a plan, claim or answer one focused adversarial pass. It assumes the target is wrong and hunts for the fatal flaw, instead of agreeing with it. It is the cheap middle step between accepting Claude's first answer and running a full multi-agent review.
 
@@ -23,7 +23,7 @@ Type `/redteam` or say "push back on this", "red-team this" or "stress-test this
 
 ## Install
 
-In claude.ai: Customize, then Plugins, then browse the directory for **Red Team**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-redteam@mackforge`.
+In claude.ai: Customize, then Plugins, then browse the directory for **Mackforge Red Team**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-redteam@mackforge`.
 
 ## License
 

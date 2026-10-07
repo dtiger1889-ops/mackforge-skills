@@ -1,4 +1,4 @@
-# Fanout
+# Mackforge Fanout
 
 `/fanout` attacks an open-ended problem from five different angles at once, then has a critic sort the results. It is for questions with many valid answers: a design, an API shape, a name, a strategy, a set of hypotheses.
 
@@ -21,7 +21,7 @@ It runs six agents, so it uses roughly seven times the tokens of a normal answer
 
 ## Install
 
-In claude.ai: Customize, then Plugins, then browse the directory for **Fanout**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-fanout@mackforge`.
+In claude.ai: Customize, then Plugins, then browse the directory for **Mackforge Fanout**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-fanout@mackforge`.
 
 ## License
 

@@ -1,6 +1,6 @@
 {
   "name": "mackforge-redteam",
-  "displayName": "Red Team",
+  "displayName": "Mackforge Red Team",
   "version": "1.0.0",
   "description": "One adversarial pass that assumes your plan or answer is wrong, finds the most likely fatal flaw, and names the cheapest check that settles it.",
   "author": {

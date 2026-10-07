@@ -1,4 +1,4 @@
-# Thinking Tools
+# Mackforge Think Twice
 
 Seven skills for thinking with Claude instead of just accepting its first answer. Each one is a slash command you call when you want it; none of them run on their own.
 
@@ -22,7 +22,7 @@ The same `outside`, `redteam` and `fanout` skills are also listed on their own, 
 
 ## Install
 
-In claude.ai: Customize, then Plugins, then browse the directory for **Thinking Tools**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-thinking-tools@mackforge`.
+In claude.ai: Customize, then Plugins, then browse the directory for **Mackforge Think Twice**. In Claude Code: `/plugin marketplace add dtiger1889-ops/mackforge-skills`, then `/plugin install mackforge-thinking-tools@mackforge`.
 
 ## Credit and license
 
