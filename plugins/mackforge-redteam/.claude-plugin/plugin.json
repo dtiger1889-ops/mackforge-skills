@@ -1,7 +1,7 @@
 {
   "name": "mackforge-redteam",
   "displayName": "Mackforge Red Team",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One adversarial pass that assumes your plan or answer is wrong, finds the most likely fatal flaw, and names the cheapest check that settles it.",
   "author": {
     "name": "Daniel Mack",
@@ -13,6 +13,7 @@
   "supportUrl": "https://github.com/dtiger1889-ops/mackforge-skills/issues",
   "privacyPolicyUrl": "https://github.com/dtiger1889-ops/mackforge-skills/blob/main/PRIVACY.md",
   "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
   "keywords": [
     "critique",
     "review",

@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-VERSION = "1.0.0"  # raise with every release; the directory serves the newest version
+VERSION = "1.0.1"  # raise with every release; the directory serves the newest version
 AUTHOR = {"name": "Daniel Mack", "url": "https://mackforge.dev"}
 REPO = "https://github.com/dtiger1889-ops/mackforge-skills"
 
@@ -77,6 +77,7 @@ def build():
             "supportUrl": f"{REPO}/issues",
             "privacyPolicyUrl": f"{REPO}/blob/main/PRIVACY.md",
             "license": "MIT",
+            "icon": "./.claude-plugin/icon.png",  # the directory shows only the icon this field names
             "keywords": spec["keywords"],
         }
         (pdir / ".claude-plugin").mkdir(exist_ok=True)

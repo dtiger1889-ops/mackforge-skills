@@ -1,7 +1,7 @@
 {
   "name": "mackforge-yolo-alchemy",
   "displayName": "Mackforge Yolo Alchemy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Spend the usage you would otherwise lose at your weekly reset: an overnight run that pairs one of your projects with research from an unrelated field and leaves a short morning brief.",
   "author": {
     "name": "Daniel Mack",
@@ -13,6 +13,7 @@
   "supportUrl": "https://github.com/dtiger1889-ops/mackforge-skills/issues",
   "privacyPolicyUrl": "https://github.com/dtiger1889-ops/mackforge-skills/blob/main/PRIVACY.md",
   "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
   "keywords": [
     "research",
     "scheduled",

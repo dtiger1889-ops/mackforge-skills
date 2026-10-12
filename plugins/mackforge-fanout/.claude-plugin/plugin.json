@@ -1,7 +1,7 @@
 {
   "name": "mackforge-fanout",
   "displayName": "Mackforge Fanout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Five parallel thinking frames plus a critic on an open-ended problem: scored ideas, the traps each one carries, and the strongest direction.",
   "author": {
     "name": "Daniel Mack",
@@ -13,6 +13,7 @@
   "supportUrl": "https://github.com/dtiger1889-ops/mackforge-skills/issues",
   "privacyPolicyUrl": "https://github.com/dtiger1889-ops/mackforge-skills/blob/main/PRIVACY.md",
   "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
   "keywords": [
     "ideation",
     "brainstorming",

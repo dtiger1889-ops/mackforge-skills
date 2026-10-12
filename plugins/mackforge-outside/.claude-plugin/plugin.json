@@ -1,7 +1,7 @@
 {
   "name": "mackforge-outside",
   "displayName": "Mackforge Outside View",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Before committing to an approach, one quick check of what already exists: shipped tools, your other projects, your notes. Verdict first, one next action last.",
   "author": {
     "name": "Daniel Mack",
@@ -13,6 +13,7 @@
   "supportUrl": "https://github.com/dtiger1889-ops/mackforge-skills/issues",
   "privacyPolicyUrl": "https://github.com/dtiger1889-ops/mackforge-skills/blob/main/PRIVACY.md",
   "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
   "keywords": [
     "prior-art",
     "research",
