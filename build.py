@@ -46,6 +46,7 @@ PLUGINS = {
         "description": "Spend the usage you would otherwise lose at your weekly reset: an overnight run that pairs one of your projects with research from an unrelated field and leaves a short morning brief.",
         "skills": ["yolo-alchemy"],
         "keywords": ["research", "scheduled", "ideation", "automation"],
+        "category": "automation",
     },
 }
 
@@ -92,7 +93,13 @@ def build():
         "description": "mackforge skills for thinking with Claude.",
         "owner": AUTHOR,
         "plugins": [
-            {"name": n, "source": f"./plugins/{n}", "description": s["description"]}
+            {
+                "name": n,
+                "source": f"./plugins/{n}",
+                "description": s["description"],
+                "category": s.get("category", "productivity"),  # values follow Anthropic's official marketplace
+                "keywords": s["keywords"],
+            }
             for n, s in PLUGINS.items()
         ],
     }
