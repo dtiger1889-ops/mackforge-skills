@@ -1,7 +1,7 @@
 {
   "name": "mackforge-outside",
   "displayName": "Mackforge Outside View",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Before committing to an approach, one quick check of what already exists: shipped tools, your other projects, your notes. Verdict first, one next action last.",
   "author": {
     "name": "Daniel Mack",

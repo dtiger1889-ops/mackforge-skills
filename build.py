@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-VERSION = "1.0.1"  # raise with every release; the directory serves the newest version
+VERSION = "1.0.2"  # raise with every release; the directory serves the newest version
 AUTHOR = {"name": "Daniel Mack", "url": "https://mackforge.dev"}
 REPO = "https://github.com/dtiger1889-ops/mackforge-skills"
 

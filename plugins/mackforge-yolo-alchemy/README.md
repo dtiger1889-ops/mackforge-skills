@@ -1,6 +1,6 @@
 # Mackforge Yolo Alchemy
 
-Usage you haven't spent when your weekly limit resets is gone. `/yolo-alchemy` turns it into research. Run on the evening before the reset, it picks one of your projects, researches one unrelated field (biology, logistics, urban planning and so on), and pairs that field's mechanisms with the project's open problems. If the best pairing can be sketched in under an hour, it builds a throwaway prototype. In the morning you have a short brief, the research notes with their sources, and one line in a running ledger.
+Usage you haven't spent when your weekly limit resets is gone. `/yolo-alchemy` turns it into research. Run on the evening before the reset, it picks one of your projects, researches one unrelated field (biology, logistics, urban planning and so on), and pairs that field's mechanisms with the project's open problems. If the remaining budget allows, it builds a throwaway prototype. The run leaves a short brief, research notes with their sources, and one line in a running ledger.
 
 ## Use it when
 
@@ -11,14 +11,14 @@ Usage you haven't spent when your weekly limit resets is gone. `/yolo-alchemy` t
 
 1. Install the plugin (below).
 2. Create a scheduled task that runs on the evening before your weekly reset, started in the folder that holds your projects, with the prompt `/yolo-alchemy`. Claude Desktop's scheduled tasks work, as does any scheduler that can run `claude -p "/yolo-alchemy"` in that folder.
-3. Optional: in the task's prompt or your instructions file, name a runs folder, a stop time (when the brief must be done) and any projects to skip.
+3. Optional: in the task's prompt or your instructions file, name a runs folder, a stop time and timezone, projects to skip, and an authorized delivery or task-list destination. The default time budget is two hours from the start.
 
 You can also type `/yolo-alchemy` yourself any time you want a run.
 
 ## What it does and does not do
 
-- Writes inside its own runs folder (`yolo-alchemy/runs/` by default), plus one item in your task list if you keep one it can write to. It never writes in the project it studies, and never commits, branches or pushes.
-- Searches the web through Claude's own search tool. Sends nothing anywhere else, except a short notification when your session has a messaging or notification tool.
+- Writes inside its own runs folder (`yolo-alchemy/runs/` by default), plus one task-list item if you configured and authorized that destination. It never writes in the project it studies, and never commits, branches or pushes.
+- Searches the web through the session's available search tools. Notifications use only a delivery channel you configured and authorized; otherwise the brief and final response are the delivery.
 - Does not check your account's usage. Scheduling it for the evening before your reset aims it at usage that is about to expire, but in a heavy week it still spends usage you may want, so skip that night. It stops early and writes the brief on any rate-limit error.
 - If you reply "do it" in the run's session, it switches to normal work inside that project.
 

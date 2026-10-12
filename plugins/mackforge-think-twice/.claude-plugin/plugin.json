@@ -1,7 +1,7 @@
 {
   "name": "mackforge-think-twice",
   "displayName": "Mackforge Think Twice",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Seven skills for thinking with Claude: check prior art, attack a plan, fan out ideas, break a problem down, prove claims, translate jargon, and interview before building.",
   "author": {
     "name": "Daniel Mack",

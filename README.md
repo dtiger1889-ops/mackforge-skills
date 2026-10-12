@@ -16,7 +16,7 @@ Claude commits to its first answer fast, and most of my corrections were the sam
 | [mackforge-outside](plugins/mackforge-outside) | `/outside` only |
 | [mackforge-redteam](plugins/mackforge-redteam) | `/redteam` only |
 | [mackforge-fanout](plugins/mackforge-fanout) | `/fanout` only |
-| [mackforge-yolo-alchemy](plugins/mackforge-yolo-alchemy) | `/yolo-alchemy`: a scheduled overnight run that spends usage you'd otherwise lose at your weekly reset on research paired with one of your projects |
+| [mackforge-yolo-alchemy](plugins/mackforge-yolo-alchemy) | `/yolo-alchemy`: an opt-in overnight research run paired with one of your projects, on a budget you set |
 
 Pick either the bundle or the single plugins you want. Installing the bundle next to a single one gives you the same command twice. Yolo Alchemy is separate from the bundle because it's built to run on a schedule rather than in conversation.
 

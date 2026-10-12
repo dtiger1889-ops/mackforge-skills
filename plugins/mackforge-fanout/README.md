@@ -13,7 +13,7 @@ Type `/fanout` or say "fanout this" or "give me frames on X".
 
 ## Cost
 
-It runs six agents, so it uses roughly seven times the tokens of a normal answer. It never runs automatically. In Claude Code and Cowork it runs the five frames in parallel; where sub-agents are not available it runs them one after another in the same conversation.
+It uses five thinking frames followed by a critic, so it consumes more usage than a single answer; the amount depends on the task and model. It never runs automatically. Where the runtime supports helper agents, the frames run in parallel within its limits. Otherwise they run sequentially in the same conversation, without independent agent contexts.
 
 ## What it does and does not do
 

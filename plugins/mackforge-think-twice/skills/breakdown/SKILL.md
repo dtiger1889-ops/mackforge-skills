@@ -1,41 +1,37 @@
 ---
 name: breakdown
-description: Convergent, action-first problem decomposition (the terse twin of /fanout). Use ONLY when the user types /breakdown or says "break this down" / "break it down" / "decompose this". Takes ONE tangled or ambiguous problem and returns the single smallest next ACTION plus a collapsed full plan. Terse, no hand-holding, no capability narration. Do NOT use for open-ended ideation with many valid answers (that is /fanout), and do NOT use when the task is already one clear action.
+description: >-
+  Decomposes one tangled problem into a smallest next action and a compact
+  full plan. Use only for /breakdown, break this down, break it down, or
+  decompose this. Not broad ideation or a task already reduced to one
+  clear action.
 ---
 
-# breakdown -- convergent, action-first decomposition
+# Breakdown
 
-The convergent complement to /fanout. /fanout opens a problem up (many valid answers);
-/breakdown closes one down (one tangle -> one next step). Single-shot, no sub-agents,
-~1x cost. Built from the loudest friction in real sessions,
-"stop explaining, just do it," so this skill is ACTION-FIRST and minimal-prose by design.
-If your output reads like a gentle walk-through, it is wrong -- cut it.
+Find the next action that moves the user's stated goal forward.
 
-## Step 1 -- get the tangle
-Accept the problem from an @-mention, a path, or pasted text. If it is genuinely vague,
-ask for one or two sentences -- once. Read any referenced file to EOF before decomposing.
-If the tangle is (or names) a project artifact, ALSO read the project's own state docs (a README, a status or checkpoint file, decision records, whatever the project uses to track goals and what has been tried)
-to the end first (a preview is not a read) -- the "real goal" and the "blocking decision"
-depend on live project state (deadlines, sequencing gates, what's already decided), and a
-decomposition blind to it points at the wrong next action. Skip only if genuinely project-free.
+## Context
 
-## Step 2 -- output exactly these five blocks, tersely, in order
-No preamble. No "I have access to...". Do not restate the question back at length.
+Resolve the problem from the request or referenced material. Read relevant
+project state and instructions before decomposing project work. Use settled
+decisions and real constraints. Ask only if missing information changes the
+next action.
 
-1. **Real goal** (one sentence). What "done" actually means. If the stated goal differs
-   from the real one, say so in one line.
-2. **Smallest next action** (one concrete, physical step doable in one sitting -- e.g.
-   "open X and write the three field names," not "design the schema"). Then OFFER to just
-   do it now. Do not explain at length first.
-3. **The one blocking decision** -- the single fork that unlocks the most, or
-   "none -- just start."
-4. **Full plan (collapsed)** -- the complete checklist under a one-line summary, explicitly
-   de-emphasized: "ignore until step 2 is done."
-5. **First trap** -- the single most likely failure mode and its earliest signal.
+## Output
 
-## Rules
-- One thread on the critical path. Do not list parallel workstreams.
-- Plain language, no invented codes (translate any filing tags to people-words).
-- Do NOT start the work until the user picks. /breakdown plans; it does not execute.
-- Persist nothing by default. If worth keeping, offer to write it into the project's
-  own notes as its next step.
+Give these five parts tersely, without a preamble:
+
+1. **Goal:** what completion means for the user's request. Flag a material
+   ambiguity rather than replacing the user's goal with an invented one.
+2. **Smallest next action:** one concrete step that can be started now.
+3. **Blocking decision:** the one unresolved choice that matters most,
+   or none.
+4. **Full plan:** a compact checklist in dependency order.
+5. **First trap:** the likeliest failure and its earliest observable signal.
+
+## Scope
+
+Follow one critical path and use plain language. This invocation plans;
+it does not execute the plan or save a new artifact unless requested.
+State the next action without promising unrequested work.

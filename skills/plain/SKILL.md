@@ -1,52 +1,30 @@
 ---
 name: plain
-description: Re-explain a dense, jargon-loaded, or code-stuffed response in plain, generous
-  English. Use when the user types /plain or says "say that in plain english" / "english
-  please" / "de-jargon this" / "unpack that" / "explain that like a normal person".
-  Targets the PREVIOUS assistant message by default, or a pasted/@-mentioned block.
-  Expands every invented code/tag/acronym into people-words by LOOKING IT UP (never
-  guessing), keeps ALL the substance, and introduces NO new shorthand. This is the
-  on-demand enforcement of a standing plain-language rule.
+description: >-
+  Re-explains dense or jargon-heavy text in plain English while preserving
+  its substance. Use for /plain, plain English please, de-jargon this, or
+  unpack that. Targets the previous assistant message unless a passage
+  or file is specified. Does not add new analysis or recommendations.
 ---
 
-# plain -- translate a dense/jargon response into plain English
+# Plain English
 
-The standing rule this enforces: understandable, digestible English in chat -- every
-self-invented code glossed in plain words, nothing buried under process narration.
-It keeps getting violated -- responses come back stuffed with filing codes (`F027`, `B13`,
-`PTT`, a `def_hash`...), unexpanded acronyms, and compressed noun-stacks that are a wall
-to read. This skill is the fix: take that response and SAY IT AGAIN in plain,
-conversational, generous English.
+Re-express the target so a reader can understand it without decoding
+project shorthand. Preserve the meaning and necessary detail.
 
-This is the ANTI-terse skill -- the opposite of /breakdown. Length is fine; losing meaning
-is not.
+## Procedure
 
-## What to translate
-Default target: the immediately previous assistant message. If the user pasted text or
-@-mentioned a file/block, translate that instead. If it is ambiguous which, ask once.
+1. Use the previous assistant message unless the user specifies another
+   passage. Ask only if the intended target is unclear.
+2. Resolve unfamiliar codes, abbreviations, and project terms from the
+   relevant glossary, notes, or source files. Do not guess. If a meaning
+   cannot be found, say that plainly.
+3. Unpack compressed clauses into ordinary sentences. Define unavoidable
+   technical terms at first use.
+4. Keep all substantive claims, qualifications, and consequences. This is
+   a translation, not a shortened summary.
+5. Lead with the point and use connected paragraphs or a simple list.
+   Introduce no new shorthand, opinions, or next steps.
 
-## How to do it
-1. **RESOLVE every code, tag, and acronym to its real meaning -- do NOT guess.** When a
-   filing code / phase name / gate name / hash appears, look it up in the project files
-   (its notes, glossary, status file, or the relevant spec) and state what it actually IS
-   in people-words. If you genuinely cannot find what a code refers to, say
-   "I couldn't find what `X` refers to" -- never bluff a meaning.
-2. **Re-express, don't summarize.** Keep ALL the substance. This is a translation, not a
-   trimmed recap; dropping detail to be shorter is the failure mode.
-3. **Unpack** compressed noun-stacks and nested clauses into short, ordinary sentences.
-4. **Introduce NO new shorthand** -- no codes, no project jargon. If a technical term is
-   genuinely unavoidable, define it inline the first time you use it.
-5. **Structure for reading** -- short paragraphs or a plain list, not a block.
-
-## Worked example
-- **Bad:** "The F027 gate blocks the B13 rung until the def_hash reconciles."
-- **Good:** "One check (the project calls it F027) won't let the build move on until two
-  copies of the file match. Right now they don't."
-- Why: the bad version swapped one shorthand for another and left the reader no better off.
-
-## Rules
-- Plain, conversational English, structured to be digestible: answer first, short
-  paragraphs, expansive enough to define every term -- never a wall of text.
-- Never invent a meaning for a code you couldn't resolve.
-- Don't add new analysis, opinions, or next steps -- just make the existing content legible.
-  If the user wants more, they'll ask.
+An explanation may need more words than the original. Use them where they
+make the meaning clearer, without adding process narration.

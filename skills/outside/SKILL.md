@@ -1,84 +1,50 @@
 ---
 name: outside
-description: Force the session out of its own head before committing to an approach -- one cheap reconnaissance pass over shipped solutions, the user's other projects, and the user's notes. Use when the user types /outside or says "get an outside view" / "check prior art" / "are we reinventing the wheel" / "has anyone already built this". One pass, no subagents, 1-3 web searches.
+description: >-
+  Checks shipped solutions, relevant project decisions, and available notes
+  before choosing an approach. Use for /outside, check prior art, get an
+  outside view, or has anyone already built this. Performs one bounded
+  research pass; not multi-frame ideation or a requirements interview.
 ---
 
-# outside -- external grounding pass (prior art + workspace + notes)
+# Outside view
 
-The gap this fills: /breakdown decomposes, /fanout diverges internally, /redteam attacks --
-none of them LOOK OUTSIDE the session. This one does. It forces "shipped solutions first":
-adopt or adapt what exists is the default; building from scratch needs a stated reason.
+Compare the current approach with what already exists. Prefer adoption or
+adaptation when it meets the goal; explain any reason to build from scratch.
 
-Copy this checklist into your response and check items off as you complete them:
-- [ ] 0. Oriented (project state file read, if in a project)
-- [ ] 1. Tunnel named (problem restated + current in-head approach stated)
-- [ ] 2. Shipped-solutions sweep (web)
-- [ ] 3. Workspace sweep (your other projects)
-- [ ] 4. Notes check
-- [ ] 5. Report (verdict first, one next action last)
+## Gather context
 
-## 0 -- orient (a hard step, not a reminder)
-If the work lives in a project with a state file (a status or checkpoint file, a README
-with goals and decisions) not fully read this session, read it to EOF first. Its recorded decisions and failed approaches may already contain the answer -- or
-be the tunnel itself.
-**Before step 2 may run, quote back in your response:** the state file's status line
-verbatim, and the headings of its recorded decisions (or "none"). A pass that cannot quote
-them has not oriented and does not proceed to the web. Why this is a hard step:
-/outside opens with read-only work, so nothing else catches a pass that skips it. When
-this step was skipped in practice, the answer was already sitting in the state file.
+1. Establish the problem and current approach from the request. For project
+   work, read the relevant state and instruction files before searching.
+   Account for settled decisions, constraints, and rejected approaches.
+2. Search for shipped solutions and maintained components for this exact
+   problem. Start with 1-3 focused searches and inspect the strongest sources.
+   Consider major platforms when their workflows are relevant, without
+   forcing an agent-platform search onto an unrelated task.
+3. Check the 2-3 most plausible sibling projects for an existing solution.
+   Skip when there is no accessible workspace beyond this project.
+4. Read a relevant note if the project points to one. Do not sweep an entire
+   notes collection. Report any material source-access gap.
 
-## 1 -- name the tunnel
-Two sentences, no more:
-- The problem, restated stripped of any approach ("we need X", not "we need to build Y
-  for X").
-- The current in-head approach, named explicitly. This is the thing on trial.
+Use available free search tools before metered scraping. If an ignore-aware
+search hides the target files, explicitly include ignored files or use an
+appropriate filesystem search.
 
-## 2 -- shipped-solutions sweep
-Web search for what already exists for this exact ask: GitHub repos, published
-skills/MCP servers, community writeups, a library, a product someone already ships.
-1-3 searches. Prefer free search tools over metered scraping services. When the thing on trial is something being BUILT, one search is always "which maintained library or component already does this" -- not only design advice (a hand-built data table once got patched for a day before anyone searched for a table library). One of the searches
-is always the standing question "what do the LARGEST agent runtimes / platforms do for
-this?" (Claude Code, Codex, OpenClaw, Cursor, the big open-source agent frameworks) -- a
-sweep keyed only on the deliverable's own nouns missed the largest adjacent platform until
-the user asked.
+## Report
 
-## 3 -- workspace sweep
-Has another of the user's projects already solved this problem shape? Search the state
-files, decision docs, and specs of the 2-3 most plausible ones, not the whole tree.
-Gotcha: search tools that respect .gitignore silently skip ignored files; if the
-workspace ignores most of its tree, use plain `grep -rin` instead. Skip this step when
-there is no workspace beyond the current project.
+Lead with whether the current approach survives, needs revision, or should
+be replaced, and why. Show up to five useful findings or alternatives, with
+source links or file locations. Do not manufacture alternatives when the
+evidence supports the current approach.
 
-## 4 -- notes check
-If the user keeps a notes system (Obsidian vault, wiki) and the project points at a
-relevant note, read that ONE note. Otherwise skip -- do not trawl the notes system.
+End with one concrete next action. If the original task already authorizes
+a repair and the evidence identifies it, complete that repair and report
+what changed. Otherwise give the recommendation without assuming permission
+to change the artifact.
 
-## 5 -- report (this cap BINDS)
-Order is fixed:
-1. **Verdict line first:** current approach survives / dies / mutates -- plus the
-   one-clause why.
-2. **What exists:** 2-3 genuinely different ways to attack the problem, numbered, each
-   with its strongest source (link or file:line). Max 5 items total (a cap on what the report SHOWS, never on how much the sweeps find or consider). Adopt/adapt beats
-   greenfield; recommending greenfield requires saying what WAS found and why it doesn't
-   fit.
-3. **One next action, last line.** Exactly one. **When the args carry a concrete complaint
-   about the user's own artifact (a page is cut off, a file is wrong), that action is RUN in
-   the same turn and the report says what changed**; if it can't be run, the line says why.
-   A report that ends on an un-run fix for the user's complaint has not finished (this
-   lapse repeated before the rule was written down).
+## Boundaries
 
-Source links go inline in the report; write a findings doc only if this feeds a real
-milestone.
-
-## Rules
-- One pass, no subagents. A dry sweep is a RESULT ("nothing shipped does this") -- report
-  it plainly, don't pad.
-- Every finding names its source (a link or file:line). Not found means say "not found" --
-  never fill the gap from memory.
-- If the sweeps confirm the current approach, say so and stop; do not manufacture
-  alternatives to look useful.
-- This is reconnaissance, not a research milestone. If it uncovers a rabbit hole worth
-  real research, put THAT in the report as the one next action -- don't dive inline.
-
-## Scope
-Not multi-frame ideation (that is /fanout), not attacking a finished answer (that is /redteam), not pre-build requirements interviewing.
+One pass, no helper agents. Distinguish not found from confirmed absent.
+Keep citations with their claims. Save findings when requested or when the
+project's established workflow requires a durable record. If more research
+is needed, name the unresolved question and the next check.
