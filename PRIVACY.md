@@ -3,8 +3,8 @@
 These plugins contain skills only: written instructions that Claude follows inside your own Claude session. They include no server, no tracking and no code that runs on install.
 
 - **Nothing is collected.** The author receives no data of any kind from people who use these plugins.
-- **Nothing is sent anywhere by the plugins.** When a skill tells Claude to search the web, that search goes through Claude's own search tool under your account, the same as any other Claude search.
-- **Nothing is stored** unless you ask for it: `/grill-me` writes its build spec into your project, `/fanout` offers to save its synthesis to your notes, and `/yolo-alchemy` writes its research notes, brief and ledger into its own runs folder on your machine.
+- **Nothing is sent anywhere by the plugins.** When a skill tells Claude to search the web, that search goes through Claude's own search tool under your account, the same as any other Claude search. The one exception: `/yolo-alchemy` sends you a short summary of its run if your session already has a messaging or notification tool you connected yourself.
+- **Nothing is stored** unless you ask for it: `/grill-me` writes its build spec into your project, `/fanout` offers to save its synthesis to your notes, and `/yolo-alchemy` writes its research notes, brief and ledger into its own runs folder on your machine (plus one item in your task list, if you keep one it can write to).
 
 Anthropic's handling of your conversations is covered by your Claude account's own privacy terms.
 

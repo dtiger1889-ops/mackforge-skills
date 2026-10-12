@@ -17,9 +17,9 @@ You can also type `/yolo-alchemy` yourself any time you want a run.
 
 ## What it does and does not do
 
-- Writes only inside its own runs folder (`yolo-alchemy/runs/` by default). It never writes in the project it studies, and never commits, branches or pushes.
+- Writes inside its own runs folder (`yolo-alchemy/runs/` by default), plus one item in your task list if you keep one it can write to. It never writes in the project it studies, and never commits, branches or pushes.
 - Searches the web through Claude's own search tool. Sends nothing anywhere else, except a short notification when your session has a messaging or notification tool.
-- Does not read your account's usage. The schedule is what keeps it to leftover usage, and it stops early and writes the brief on any rate-limit error.
+- Does not check your account's usage. Scheduling it for the evening before your reset aims it at usage that is about to expire, but in a heavy week it still spends usage you may want, so skip that night. It stops early and writes the brief on any rate-limit error.
 - If you reply "do it" in the run's session, it switches to normal work inside that project.
 
 ## Install
