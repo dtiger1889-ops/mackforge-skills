@@ -25,6 +25,11 @@
       "name": "mackforge-think-twice",
       "source": "./plugins/mackforge-think-twice",
       "description": "Seven skills for thinking with Claude: check prior art, attack a plan, fan out ideas, break a problem down, prove claims, translate jargon, and interview before building."
+    },
+    {
+      "name": "mackforge-yolo-alchemy",
+      "source": "./plugins/mackforge-yolo-alchemy",
+      "description": "Spend the usage you would otherwise lose at your weekly reset: an overnight run that pairs one of your projects with research from an unrelated field and leaves a short morning brief."
     }
   ]
 }

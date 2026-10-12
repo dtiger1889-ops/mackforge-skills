@@ -16,8 +16,9 @@ Claude commits to its first answer fast, and most of my corrections were the sam
 | [mackforge-outside](plugins/mackforge-outside) | `/outside` only |
 | [mackforge-redteam](plugins/mackforge-redteam) | `/redteam` only |
 | [mackforge-fanout](plugins/mackforge-fanout) | `/fanout` only |
+| [mackforge-yolo-alchemy](plugins/mackforge-yolo-alchemy) | `/yolo-alchemy`: a scheduled overnight run that spends usage you'd otherwise lose at your weekly reset on research paired with one of your projects |
 
-Pick either the bundle or the single plugins you want. Installing the bundle next to a single one gives you the same command twice.
+Pick either the bundle or the single plugins you want. Installing the bundle next to a single one gives you the same command twice. Yolo Alchemy is separate from the bundle because it's built to run on a schedule rather than in conversation.
 
 ## Install
 
@@ -27,7 +28,7 @@ Pick either the bundle or the single plugins you want. Installing the bundle nex
 ## How this repo is laid out
 
 - `skills/` holds the one copy of each skill that gets edited.
-- `plugins/` holds the four plugins. The directory installs only a plugin's own folder, so each plugin carries its own copy of its skills.
+- `plugins/` holds the five plugins. The directory installs only a plugin's own folder, so each plugin carries its own copy of its skills.
 - `build.py` copies `skills/` into the plugins, writes each `plugin.json` and the marketplace file, and checks each plugin's README length. Run `python build.py` after editing a skill, then `claude plugin validate plugins/<name>`.
 
 ## License

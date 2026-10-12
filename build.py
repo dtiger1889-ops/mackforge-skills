@@ -41,6 +41,12 @@ PLUGINS = {
         "skills": ["outside", "redteam", "fanout", "breakdown", "prove", "plain", "grill-me"],
         "keywords": ["thinking", "planning", "critique", "research", "prompting"],
     },
+    "mackforge-yolo-alchemy": {
+        "displayName": "Mackforge Yolo Alchemy",
+        "description": "Spend the usage you would otherwise lose at your weekly reset: an overnight run that pairs one of your projects with research from an unrelated field and leaves a short morning brief.",
+        "skills": ["yolo-alchemy"],
+        "keywords": ["research", "scheduled", "ideation", "automation"],
+    },
 }
 
 
