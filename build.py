@@ -21,32 +21,31 @@ PLUGINS = {
         "displayName": "Mackforge Outside View",
         "description": "Before committing to an approach, one quick check of what already exists: shipped tools, your other projects, your notes. Verdict first, one next action last.",
         "skills": ["outside"],
-        "keywords": ["prior-art", "research", "planning"],
+        "keywords": ["prior-art", "research", "planning", "existing-tools", "build-vs-buy"],
     },
     "mackforge-redteam": {
         "displayName": "Mackforge Red Team",
         "description": "One adversarial pass that assumes your plan or answer is wrong, finds the most likely fatal flaw, and names the cheapest check that settles it.",
         "skills": ["redteam"],
-        "keywords": ["critique", "review", "decision-making"],
+        "keywords": ["critique", "review", "decision-making", "red-team", "devils-advocate", "second-opinion"],
     },
     "mackforge-fanout": {
         "displayName": "Mackforge Fanout",
         "description": "Five parallel thinking frames plus a critic on an open-ended problem: scored ideas, the traps each one carries, and the strongest direction.",
         "skills": ["fanout"],
-        "keywords": ["ideation", "brainstorming", "design"],
+        "keywords": ["ideation", "brainstorming", "design", "parallel-agents", "multi-agent"],
     },
     "mackforge-think-twice": {
         "displayName": "Mackforge Think Twice",
         "description": "Seven skills for thinking with Claude: check prior art, attack a plan, fan out ideas, break a problem down, prove claims, translate jargon, and interview before building.",
         "skills": ["outside", "redteam", "fanout", "breakdown", "prove", "plain", "grill-me"],
-        "keywords": ["thinking", "planning", "critique", "research", "prompting"],
+        "keywords": ["thinking", "planning", "critique", "research", "prompting", "brainstorming", "second-opinion", "fact-check"],
     },
     "mackforge-yolo-alchemy": {
         "displayName": "Mackforge Yolo Alchemy",
         "description": "Spend the usage you would otherwise lose at your weekly reset: an overnight run that pairs one of your projects with research from an unrelated field and leaves a short morning brief.",
         "skills": ["yolo-alchemy"],
-        "keywords": ["research", "scheduled", "ideation", "automation"],
-        "category": "automation",
+        "keywords": ["research", "scheduled", "ideation", "automation", "overnight", "usage-limits"],
     },
 }
 
@@ -97,8 +96,9 @@ def build():
                 "name": n,
                 "source": f"./plugins/{n}",
                 "description": s["description"],
-                "category": s.get("category", "productivity"),  # values follow Anthropic's official marketplace
+                "category": "productivity",  # a category both Anthropic's marketplace and ClaudePluginHub use
                 "keywords": s["keywords"],
+                "tags": s["keywords"],  # Anthropic's search field; keywords is its display field
             }
             for n, s in PLUGINS.items()
         ],

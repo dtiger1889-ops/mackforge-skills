@@ -14,7 +14,16 @@
       "keywords": [
         "prior-art",
         "research",
-        "planning"
+        "planning",
+        "existing-tools",
+        "build-vs-buy"
+      ],
+      "tags": [
+        "prior-art",
+        "research",
+        "planning",
+        "existing-tools",
+        "build-vs-buy"
       ]
     },
     {
@@ -25,7 +34,18 @@
       "keywords": [
         "critique",
         "review",
-        "decision-making"
+        "decision-making",
+        "red-team",
+        "devils-advocate",
+        "second-opinion"
+      ],
+      "tags": [
+        "critique",
+        "review",
+        "decision-making",
+        "red-team",
+        "devils-advocate",
+        "second-opinion"
       ]
     },
     {
@@ -36,7 +56,16 @@
       "keywords": [
         "ideation",
         "brainstorming",
-        "design"
+        "design",
+        "parallel-agents",
+        "multi-agent"
+      ],
+      "tags": [
+        "ideation",
+        "brainstorming",
+        "design",
+        "parallel-agents",
+        "multi-agent"
       ]
     },
     {
@@ -49,19 +78,42 @@
         "planning",
         "critique",
         "research",
-        "prompting"
+        "prompting",
+        "brainstorming",
+        "second-opinion",
+        "fact-check"
+      ],
+      "tags": [
+        "thinking",
+        "planning",
+        "critique",
+        "research",
+        "prompting",
+        "brainstorming",
+        "second-opinion",
+        "fact-check"
       ]
     },
     {
       "name": "mackforge-yolo-alchemy",
       "source": "./plugins/mackforge-yolo-alchemy",
       "description": "Spend the usage you would otherwise lose at your weekly reset: an overnight run that pairs one of your projects with research from an unrelated field and leaves a short morning brief.",
-      "category": "automation",
+      "category": "productivity",
       "keywords": [
         "research",
         "scheduled",
         "ideation",
-        "automation"
+        "automation",
+        "overnight",
+        "usage-limits"
+      ],
+      "tags": [
+        "research",
+        "scheduled",
+        "ideation",
+        "automation",
+        "overnight",
+        "usage-limits"
       ]
     }
   ]
