@@ -22,6 +22,7 @@ PLUGINS = {
         "description": "Before committing to an approach, one quick check of what already exists: shipped tools, your other projects, your notes. Verdict first, one next action last.",
         "skills": ["outside"],
         "keywords": ["prior-art", "research", "planning", "existing-tools", "build-vs-buy"],
+        "category": "research",
     },
     "mackforge-redteam": {
         "displayName": "Mackforge Red Team",
@@ -46,6 +47,7 @@ PLUGINS = {
         "description": "Spend the usage you would otherwise lose at your weekly reset: an overnight run that pairs one of your projects with research from an unrelated field and leaves a short morning brief.",
         "skills": ["yolo-alchemy"],
         "keywords": ["research", "scheduled", "ideation", "automation", "overnight", "usage-limits"],
+        "category": "research",
     },
 }
 
@@ -96,7 +98,8 @@ def build():
                 "name": n,
                 "source": f"./plugins/{n}",
                 "description": s["description"],
-                "category": "productivity",  # a category both Anthropic's marketplace and ClaudePluginHub use
+                # free text, shown in Claude Code's /plugin browser; ClaudePluginHub assigns its own
+                "category": s.get("category", "productivity"),
                 "keywords": s["keywords"],
                 "tags": s["keywords"],  # Anthropic's search field; keywords is its display field
             }

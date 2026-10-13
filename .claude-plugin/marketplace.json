@@ -10,7 +10,7 @@
       "name": "mackforge-outside",
       "source": "./plugins/mackforge-outside",
       "description": "Before committing to an approach, one quick check of what already exists: shipped tools, your other projects, your notes. Verdict first, one next action last.",
-      "category": "productivity",
+      "category": "research",
       "keywords": [
         "prior-art",
         "research",
@@ -98,7 +98,7 @@
       "name": "mackforge-yolo-alchemy",
       "source": "./plugins/mackforge-yolo-alchemy",
       "description": "Spend the usage you would otherwise lose at your weekly reset: an overnight run that pairs one of your projects with research from an unrelated field and leaves a short morning brief.",
-      "category": "productivity",
+      "category": "research",
       "keywords": [
         "research",
         "scheduled",
