@@ -17,35 +17,13 @@ Test the target's strongest assumptions without manufacturing a flaw.
    Ask once if the target is materially ambiguous.
 2. For project artifacts, read the relevant state and instructions.
    Account for actual constraints and decisions already resolved.
-3. Assume the target is wrong and look for how it breaks, then write the
-   output below.
-
-## Output
-
-Write these five parts in this order, each under its own bold label. Never
-drop or merge a part: the decoy and the check are what a quick critique
-skips. If one has nothing real to report, keep the label and say so in a
-sentence with the reason.
-
-1. **Strongest failure case**: how the target actually breaks, as a
-   mechanism, not a vague risk.
-2. **Load-bearing assumption**: the one assumption that sinks the target if
-   it is false, stated as an assumption.
-3. **Decoy**: the objection that looks important but is not the real problem,
-   or the alternative explanation the obvious answer hides, and why.
-4. **Cheapest check**: the quickest concrete test (a query, a file read, a
-   measurement) that would confirm or disprove the failure case.
-5. **Verdict**: exactly one of `survives`, `needs revision`, or `abandon`,
-   written verbatim, then the single most consequential fix or reason.
-   `survives`: no observed defect breaks the target's goal; checks to run
-   and small additions can sit alongside it. `needs revision`: an observed
-   defect breaks the goal, but a fix keeps the approach. `abandon`: the
-   approach itself cannot meet the goal.
-
-Mark each concern as observed (shown by the facts given) or a hypothesis to
-check. Never present a hypothesis as a defect, and never raise a risk the
-target already handles. A hypothesis alone does not move the verdict off
-`survives`; it becomes the check.
+3. Identify:
+   - The strongest failure case and how it would occur.
+   - The assumption whose failure would invalidate the plan.
+   - Any plausible alternative explanation the obvious answer hides.
+   - The cheapest concrete check that could disprove the suspected flaw.
+4. Give a verdict: survives, needs revision, or abandon, with the most
+   consequential reason or fix. Distinguish observed defects from hypotheses.
 
 ## Delivery and scope
 
