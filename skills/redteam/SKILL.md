@@ -37,10 +37,15 @@ sentence with the reason.
    measurement) that would confirm or disprove the failure case.
 5. **Verdict**: exactly one of `survives`, `needs revision`, or `abandon`,
    written verbatim, then the single most consequential fix or reason.
+   `survives`: no observed defect breaks the target's goal; checks to run
+   and small additions can sit alongside it. `needs revision`: an observed
+   defect breaks the goal, but a fix keeps the approach. `abandon`: the
+   approach itself cannot meet the goal.
 
 Mark each concern as observed (shown by the facts given) or a hypothesis to
 check. Never present a hypothesis as a defect, and never raise a risk the
-target already handles.
+target already handles. A hypothesis alone does not move the verdict off
+`survives`; it becomes the check.
 
 ## Delivery and scope
 
