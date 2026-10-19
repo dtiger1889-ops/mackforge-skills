@@ -14,6 +14,10 @@ Seven skills for thinking with Claude instead of just accepting its first answer
 
 The same `outside`, `redteam` and `fanout` skills are also listed on their own, if you only want one.
 
+## Example
+
+Say you're about to add login to a side project. Without these, Claude usually takes the request at face value and starts building on its first guess. With them, `/grill-me` asks a few short rounds of questions (who signs in, what happens when someone loses a password) and writes the answers down as a build spec, and `/outside` checks for a maintained auth library before anyone writes one. When Claude's plan comes back, `/redteam` looks for the flaw in it, and if the explanation is full of acronyms, `/plain` says it again in ordinary words.
+
 ## What they do and do not do
 
 - They read your project files to orient and use Claude's own web search where a step calls for it. They send nothing anywhere else.

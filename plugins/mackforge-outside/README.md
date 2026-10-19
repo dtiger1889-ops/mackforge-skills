@@ -4,6 +4,10 @@ Before Claude commits to building something, `/outside` makes it look outside it
 
 The report has a fixed order: a verdict on the current approach (survives, dies, or changes), up to five things that already exist with a source link for each, and exactly one next action. Adapting what exists is the default; building from scratch has to give a reason.
 
+## Example
+
+You ask Claude for a job scheduler that retries failed jobs with backoff. Without the command, it starts writing the retry loop straight away. Run `/outside` first and it searches for maintained job queues and retry libraries, checks whether one of your other projects already has a queue, and comes back with a verdict (for example "changes: use a library"), a short list of candidates with links, and one next action, such as adding the library and wiring one job to it. You still write code, just less of it.
+
 ## Use it when
 
 - You are about to build a component that someone has probably built already.

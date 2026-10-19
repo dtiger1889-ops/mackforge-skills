@@ -2,6 +2,10 @@
 
 Usage you haven't spent when your weekly limit resets is gone. `/yolo-alchemy` turns it into research. Run on the evening before the reset, it picks one of your projects, researches one unrelated field (biology, logistics, urban planning and so on), and pairs that field's mechanisms with the project's open problems. If the remaining budget allows, it builds a throwaway prototype. The run leaves a short brief, research notes with their sources, and one line in a running ledger.
 
+## Example
+
+It's the night before your weekly reset and you still have a third of your usage left. Without a run, that third expires overnight. With the scheduled task set up, `/yolo-alchemy` starts on its own, picks one of your projects (say an inventory app), researches how ant colonies route foraging traffic, and matches those mechanisms against the app's open problems. In the morning you have a brief with the pairings worth trying, the notes and sources behind them, and possibly a throwaway prototype.
+
 ## Use it when
 
 - You regularly end the week with usage left over.

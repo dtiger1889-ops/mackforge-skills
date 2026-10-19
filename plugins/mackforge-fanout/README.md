@@ -4,6 +4,10 @@
 
 Five sub-agents each take one vantage (systems, adversarial, first principles, operator, outsider) and produce several ideas with the traps each one carries. A sixth agent scores them, groups the ones that converged, lists every distinct trap, and deepens the top three with the riskiest assumption behind each and the cheapest way to test it. You see the top three, the trap list and a short synthesis.
 
+## Example
+
+You need the shape of a new API, or a name for a small tool. Asked directly, Claude gives one answer, usually the most obvious one, and you end up iterating on that one. With `/fanout`, each of the five frames brings its own candidates and the traps they carry, and the critic ranks them: you get the top three, each with its riskiest assumption and a cheap way to test it, plus every trap the frames found. Save it for choices where picking wrong would cost you.
+
 ## Use it when
 
 - The problem is open-ended and the decision matters.

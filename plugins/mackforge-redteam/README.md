@@ -12,6 +12,10 @@ Every pass returns the same five parts:
 
 If the target genuinely holds up, it says so plainly rather than inventing a flaw.
 
+## Example
+
+Claude suggests caching API responses for a day to cut costs, and it sounds reasonable. Without the command, the next step is building it. With `/redteam`, the pass assumes the plan is wrong and looks for how it breaks: if the source data changes every hour, people see stale prices for most of the day. It names the assumption the plan rests on (the data rarely changes), gives the cheapest disproof (check how often the source actually updates), and ends with a verdict and the one fix that matters most.
+
 ## Use it when
 
 Type `/redteam` or say "push back on this", "red-team this" or "stress-test this".
