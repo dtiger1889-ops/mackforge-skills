@@ -54,14 +54,19 @@ and all five outputs. Ask it to:
   sharpen the idea, identify its riskiest assumption, and name a concrete
   test and first step.
 - Synthesize the strongest direction and the evidence still needed.
+- Spread: list each frame's single highest-scored idea in one line,
+  labelled "chance another AI gives this: N%", ordered high to low so the
+  rarest comes last.
 
 Agreement is a useful signal, not proof that an approach is correct.
 Scores are judgments, not calibrated probabilities.
 
 ## Deliver
 
-Present the strongest directions, distinct traps, and synthesis, with
-a concise note on convergence. Do not dump raw frame transcripts unless
+Show the spread first, so an idea only one frame reached is not buried
+under the ones several frames agreed on. Then present the strongest
+directions, distinct traps, and synthesis, with a concise note on
+convergence. Do not dump raw frame transcripts unless
 asked. Offer to save useful conclusions in the project's own records;
 keep raw outputs ephemeral unless saving was requested.
 

@@ -4,7 +4,9 @@ description: >-
   Re-explains dense or jargon-heavy text in plain English while preserving
   its substance. Use for /plain, plain English please, de-jargon this, or
   unpack that. Targets the previous assistant message unless a passage
-  or file is specified. Does not add new analysis or recommendations.
+  or file is specified. Picture mode, only when asked (/plain show, or
+  "show me" about an answer), re-explains with the smallest plain-text
+  picture. Does not add new analysis or recommendations.
 ---
 
 # Plain English
@@ -28,3 +30,36 @@ project shorthand. Preserve the meaning and necessary detail.
 
 An explanation may need more words than the original. Use them where they
 make the meaning clearer, without adding process narration.
+
+## Picture mode
+
+Use this only on `/plain show` or when the user says "show me" about an
+answer; otherwise stay in prose.
+
+1. Resolve every code first (step 2). Labels inside a picture are words
+   too, so an unexplained code in a tree node fails like it would in a
+   sentence.
+2. Pick the smallest picture that makes the point, usually one:
+   - steps or logic: pseudocode in plain words, numbered or indented
+   - what runs what, in order: an indented call tree
+   - how parts or files are arranged and who owns what: a shallow
+     component or file tree
+   - what changes: a `diff` block of the tree or list (`-` removed,
+     `+` added) when the shape already exists; the whole thing when most
+     of it is new
+3. Put one or two plain sentences before each picture saying what it
+   shows. Keep only the parts that answer the point.
+4. Use a fenced block of plain ASCII (`|--`, `` `-- ``, indentation), with
+   lines under about 60 characters so a narrow terminal does not wrap them.
+5. Do not use Mermaid in a terminal session, where it prints as raw text,
+   and do not write an HTML file. If plain text cannot carry the picture
+   (a screen layout, a dense comparison), say so and suggest a rendered
+   diagram instead.
+6. Everything above still holds: what the picture cannot hold goes in
+   plain sentences under it, so no substance is lost, and no new
+   shorthand or analysis comes in.
+
+## Attribution
+
+Picture mode is adapted from humanlayer's
+[show-me](https://github.com/humanlayer/skills) skill, MIT.

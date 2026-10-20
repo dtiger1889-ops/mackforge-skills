@@ -21,6 +21,11 @@ adaptation when it meets the goal; explain any reason to build from scratch.
    problem. Start with 1-3 focused searches and inspect the strongest sources.
    Consider major platforms when their workflows are relevant, without
    forcing an agent-platform search onto an unrelated task.
+   Always ask one more question: how do the best practitioners of this
+   deliverable do it? Look for people who do the work well, not only tools
+   built for it, because the default answer tends to be the average one.
+   Fold it into one of the searches above when the cap is tight, but never
+   drop it. Answer it with a link like any other finding, or say not found.
 3. Check the 2-3 most plausible sibling projects for an existing solution.
    Skip when there is no accessible workspace beyond this project.
 4. Read a relevant note if the project points to one. Do not sweep an entire

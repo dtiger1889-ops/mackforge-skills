@@ -38,7 +38,8 @@ Cover only what is unresolved:
 - Audience and where the deliverable runs.
 - Data, inputs, integrations, platform, and cost constraints.
 - Failure behavior and how problems reach the user.
-- Taste references and rejection criteria.
+- Taste references and rejection criteria, plus an outside judge: who or
+  what, other than the user or the model, will show the result is good.
 - Maintenance and any delegation preferences.
 
 For uncertain inputs, distinguish a draft that can flag gaps from an action
@@ -56,8 +57,8 @@ assumptions; do not wait for an absent user.
 
 Condense the settled brief into the project's spec or state file. Include
 the user's intent, success criteria, surface and audience, must-haves,
-exclusions, constraints, failure behavior, taste references, and unresolved
-assumptions. Add a dated note that the brief has been resolved so later
+exclusions, constraints, failure behavior, taste references, the outside
+judge, and unresolved assumptions. Add a dated note that the brief has been resolved so later
 sessions can reuse it.
 
 Show the spec for correction before building when choices remain to be
